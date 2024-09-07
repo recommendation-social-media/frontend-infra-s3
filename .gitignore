@@ -1,0 +1,8 @@
+#terraform
+tempCodeRunnerFile.*
+terraform.tfstate
+.terraform.lock.hcl
+*.zip
+.terraform
+terraform.tfstate.backup
+dist
