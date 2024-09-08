@@ -25,7 +25,7 @@ data "aws_iam_policy_document" "s3_bucket_policy" {
     condition {
       test = "StringEquals"
       variable = "AWS:SourceArn"
-      values = ["arn:aws:cloudfront::${data.aws_caller_identity.current.account_id}:distribution/*"]
+      values = ["arn:aws:cloudfront::${data.aws_caller_identity.current.account_id}:distribution/${var.cloudfront_distribution_id}"]
     }
   }
 }
